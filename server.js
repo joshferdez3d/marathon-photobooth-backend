@@ -57,8 +57,32 @@ const kioskLimiter = rateLimit({
 });
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+// Middleware - Update CORS configuration
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or Postman)
+    if (!origin) return callback(null, true);
+    
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'http://localhost:3001', 
+      'https://marathon-photobooth-frontend.railway.app', // Replace with your actual frontend Railway URL
+      'https://marathon-photobooth.railway.app', // Add your production domain if you have one
+    ];
+    
+    // Allow any Railway app subdomain
+    if (allowedOrigins.includes(origin) || 
+        origin.includes('railway.app') || 
+        origin.includes('localhost')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'X-Kiosk-Id', 'Authorization']
+}));app.use(express.json());
 app.use('/outputs', express.static('outputs'));
 app.use('/backgrounds', express.static('backgrounds'));
 app.use('/overlays', express.static('overlays'));
@@ -168,8 +192,8 @@ const BACKGROUNDS = {
     lighting: "soft, diffused historical lighting",
     colorTreatment: "sepia vintage filter with muted browns and yellows",
     composition: "museum entrance centered, crowds on sides",
-    timePeriod: "present",
-    era: "2025",
+    timePeriod: "past",
+    era: "1980",
     pose: "running" // <-- NEW: post-race walking only for this background
 
 
