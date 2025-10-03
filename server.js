@@ -236,7 +236,7 @@ const BACKGROUNDS = {
   },
   "tcs50-firstmarathon": {
     name: "The First Marathon",
-    file: "TCS50-FirstMarathonV1.png",
+    file: "TCS50-FirstMarathonV3.png",
     description: "1970s Olympic Stadium finish line",
     lighting: "vintage 70s photography lighting",
     colorTreatment: "slightly desaturated 70s color palette",
@@ -247,7 +247,7 @@ const BACKGROUNDS = {
   },
   "tcs50-iamsterdam": {
     name: "I Amsterdam",
-    file: "TCS50-IamsterdamV1.png",
+    file: "TCS50-IamsterdamV3.png",
     description: "Modern marathon at the iconic I Amsterdam sign",
     lighting: "bright modern daylight",
     colorTreatment: "full color contemporary photography",
