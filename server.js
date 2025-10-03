@@ -175,7 +175,7 @@ const BACKGROUNDS = {
   },
   "amsterdam750-goldenage": {
     name: "Golden Age Harbor",
-    file: "Amsterdam750-GoldenAgeV3.png",
+    file: "Amsterdam750-GoldenAge.png",
     description: "Sepia-toned Amsterdam harbor from the Golden Age",
     lighting: "soft, diffused historical lighting",
     colorTreatment: "sepia vintage filter with muted browns and yellows",
@@ -187,7 +187,7 @@ const BACKGROUNDS = {
   },
   "amsterdam750-rijksmuseum": {
     name: "Rijksmuseum Celebration",
-    file: "Amsterdam750-RijksmuseumV6.png",
+    file: "Amsterdam750-Rijksmuseum.png",
     description: "Sepia-toned vintage mararthon at the Rijksmuseum, no other runners or people in the background",
     lighting: "soft, diffused historical lighting",
     colorTreatment: "sepia vintage filter with muted browns and yellows",
@@ -200,7 +200,7 @@ const BACKGROUNDS = {
   },
   "future-solarbridge": {
     name: "Solar Bridge Run",
-    file: "FutureofRunning-SolarBridge3.png",
+    file: "FutureofRunning-SolarStreet.png",
     description: "Futuristic bridge with solar panels and drone spectators",
     lighting: "bright futuristic lighting with LED accents",
     colorTreatment: "full color with blue-cyan tech tones",
@@ -212,7 +212,7 @@ const BACKGROUNDS = {
   },
   "future-biodomes": {
     name: "Canal Biodomes",
-    file: "FutureofRunningBiodomes2.png",
+    file: "FutureofRunningBiodomes.png",
     description: "Future Amsterdam with biodome structures along canals",
     lighting: "soft bioluminescent and natural light mix",
     colorTreatment: "full color with green-blue environmental tones",
@@ -224,7 +224,7 @@ const BACKGROUNDS = {
   },
   "future-smartfinish": {
     name: "Smart Stadium Finish",
-    file: "FututeofRunning-SmartFinish9.png", // keep typo if filename is exactly this
+    file: "FututeofRunning-SmartFinish.png", // keep typo if filename is exactly this
     description: "High-tech stadium with robotic assistants and holographic finish line",
     lighting: "bright stadium lighting with holographic effects",
     colorTreatment: "full color vibrant with neon accents",
@@ -236,7 +236,7 @@ const BACKGROUNDS = {
   },
   "tcs50-firstmarathon": {
     name: "The First Marathon",
-    file: "TCS50-FirstMarathonV4.png",
+    file: "TCS50-FirstMarathon.png",
     description: "1970s Olympic Stadium finish line",
     lighting: "vintage 70s photography lighting",
     colorTreatment: "slightly desaturated 70s color palette",
@@ -247,7 +247,7 @@ const BACKGROUNDS = {
   },
   "tcs50-iamsterdam": {
     name: "I Amsterdam",
-    file: "TCS50-IamsterdamV3.png",
+    file: "TCS50-Iamsterdam.png",
     description: "Modern marathon at the iconic I Amsterdam sign",
     lighting: "bright modern daylight",
     colorTreatment: "full color contemporary photography",
