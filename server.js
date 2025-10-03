@@ -224,7 +224,7 @@ const BACKGROUNDS = {
   },
   "future-smartfinish": {
     name: "Smart Stadium Finish",
-    file: "FututeofRunning-SmartFinish7.png", // keep typo if filename is exactly this
+    file: "FututeofRunning-SmartFinish8.png", // keep typo if filename is exactly this
     description: "High-tech stadium with robotic assistants and holographic finish line",
     lighting: "bright stadium lighting with holographic effects",
     colorTreatment: "full color vibrant with neon accents",
