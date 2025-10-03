@@ -224,7 +224,7 @@ const BACKGROUNDS = {
   },
   "future-smartfinish": {
     name: "Smart Stadium Finish",
-    file: "FututeofRunning-SmartFinish6.png", // keep typo if filename is exactly this
+    file: "FututeofRunning-SmartFinish7.png", // keep typo if filename is exactly this
     description: "High-tech stadium with robotic assistants and holographic finish line",
     lighting: "bright stadium lighting with holographic effects",
     colorTreatment: "full color vibrant with neon accents",
@@ -236,7 +236,7 @@ const BACKGROUNDS = {
   },
   "tcs50-firstmarathon": {
     name: "The First Marathon",
-    file: "TCS50-FirstMarathonV3.png",
+    file: "TCS50-FirstMarathonV4.png",
     description: "1970s Olympic Stadium finish line",
     lighting: "vintage 70s photography lighting",
     colorTreatment: "slightly desaturated 70s color palette",
