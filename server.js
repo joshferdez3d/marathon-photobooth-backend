@@ -46,10 +46,15 @@ const generationQueue = new PQueue({
   intervalCap: 3     // Max 3 per second
 });
 
-// Rate limiter per kiosk
+// Rate limiter per kiosk (disabled for test-script)
 const kioskLimiter = rateLimit({
-  windowMs: 60 * 1000, // 1 minute window
-  max: 5,              // 5 requests per minute per kiosk
+  windowMs: 60 * 1000,
+  max: 5,
+  skip: (req) => {
+    // Skip rate limiting for test script
+    const kioskId = req.headers['x-kiosk-id'];
+    return kioskId === 'test-script';
+  },
   keyGenerator: (req) => req.headers['x-kiosk-id'] || 'unknown',
   message: 'Too many requests from this kiosk, please wait',
   standardHeaders: true,
@@ -212,7 +217,7 @@ const BACKGROUNDS = {
   },
   "future-biodomes": {
     name: "Canal Biodomes",
-    file: "FutureofRunningBiodomes.png",
+    file: "FutureofRunning-Biodomes.png",
     description: "Future Amsterdam with biodome structures along canals",
     lighting: "soft bioluminescent and natural light mix",
     colorTreatment: "full color with green-blue environmental tones",
@@ -224,7 +229,7 @@ const BACKGROUNDS = {
   },
   "future-smartfinish": {
     name: "Smart Stadium Finish",
-    file: "FututeofRunning-SmartFinish.png", // keep typo if filename is exactly this
+    file: "FutureofRunning-SmartFinish.png", // keep typo if filename is exactly this
     description: "High-tech stadium with robotic assistants and holographic finish line",
     lighting: "bright stadium lighting with holographic effects",
     colorTreatment: "full color vibrant with neon accents",
